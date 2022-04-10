@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class positions extends Model
+class items extends Model
 {
     use HasFactory;
-    protected $table ="positions";
+    protected $table="items";
     public $timestamps=false;
-    public function worker(){
-        return $this->hasMany(workers::class,'workers','position');
+    public function category(){
+        return $this->belongsTo(categories::class,'category','id');
     }
 }
