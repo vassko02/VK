@@ -16,4 +16,7 @@ class orders extends Model
     public function orderedFrom(){
         return $this->belongsTo(workers::class,'orderedFrom','id');
     }
+    public function items(){
+        return $this->belongsToMany(items::class);
+    }
 }

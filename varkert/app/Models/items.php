@@ -13,4 +13,10 @@ class items extends Model
     public function category(){
         return $this->belongsTo(categories::class,'category','id');
     }
+    public function orders(){
+        return $this->belongsToMany(orders::class);
+    }
+    public function discount(){
+        return $this->hasMany(discounts::class,'discounts','item');
+    }
 }
