@@ -1,0 +1,42 @@
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand ms-4" routerLink="nyitooldal" (click)="active='nyitooldal'">Várkert kávézó</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+     aria-expanded="false" aria-label="Toggle navigation"
+     (click)="toggleCollapsed()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active ms-2">
+          <a class="nav-link text-light" [ngClass]="{'active': active === 'nyitooldal'}"
+          (click)="active='nyitooldal'" routerLink="nyitooldal" >Nyitóoldal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light ms-2" [ngClass]="{'active': active === 'rolunk'}"
+          (click)="active='rolunk'" routerLink="rolunk">Rólunk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light ms-2" [ngClass]="{'active': active === 'csapatunk'}"
+          (click)="active='csapatunk'" routerLink="csapatunk">Csapatunk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light ms-2" [ngClass]="{'active': active === 'itallap'}"
+          (click)="active='itallap'" routerLink="itallap">Itallap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light ms-2" [ngClass]="{'active': active === 'borlap'}"
+          (click)="active='borlap'" routerLink="borlap">Borlap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light ms-2" [ngClass]="{'active': active === 'galeria'}"
+          (click)="active='galeria'" routerLink="galeria">Galéria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light ms-2" [ngClass]="{'active': active === 'elerhetosegeink'}"
+          (click)="active='elerhetosegeink'"  routerLink="elerhetosegeink">Elérhetőségeink</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
