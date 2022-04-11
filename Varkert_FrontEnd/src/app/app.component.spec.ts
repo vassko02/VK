@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Varkert_FrontEnd'`, () => {
+  it(`should have as title 'Varkert_Frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Varkert_FrontEnd');
+    expect(app.title).toEqual('Varkert_Frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Varkert_FrontEnd app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Varkert_Frontend app is running!');
   });
 });
