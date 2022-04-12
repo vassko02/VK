@@ -1,0 +1,33 @@
+.carousel.slide{
+  margin-top: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+
+}
+.indikator:hover{
+  cursor: default !important;
+}
+.kisSzoveg{
+  font-size: 2vh;
+}
+.masodik{
+  color: black ;
+}
+.content{
+  width: 80%;
+}
+@media only screen and (max-width: 768px) {
+  [class*="slide"] {
+    width: 100%;
+    margin-left: 0vw !important;
+    margin-right: 0vw !important;
+
+  }}
+@media only screen and (max-width: 990px) {
+  [class*="slide"] {
+    width: 90%;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+
+  }
+}

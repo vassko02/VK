@@ -17,14 +17,18 @@ return new class extends Migration
             $table->increments('id');
             $table->string('name')->require();
             $table->double('price')->require();
-            $table->string('size');
             $table->integer('category')->require()->unsigned();
+            $table->integer('size')->require()->unsigned();
             $table->foreign('category')
             ->references('id')
             ->on('categories')
             ->onDelete('cascade')
             ->onUpdate('restrict');
-            //table->timestamps();
+            $table->foreign('size')
+            ->references('id')
+            ->on('sizes')
+            ->onDelete('cascade')
+            ->onUpdate('restrict');
         });
     }
 

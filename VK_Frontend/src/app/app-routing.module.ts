@@ -9,6 +9,7 @@ import { NyitoOldalComponent } from './nyito-oldal/nyito-oldal.component';
 import { RolunkComponent } from './rolunk/rolunk.component';
 
 const routes: Routes = [
+  {path:'',redirectTo:'/nyitooldal',pathMatch:'full'},
 {path:'rolunk',component:RolunkComponent},
 {path:'csapatunk',component:CsapatunkComponent},
 {path:'galeria',component:GaleriaComponent},

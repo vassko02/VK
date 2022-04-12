@@ -11,9 +11,10 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { ItalLapComponent } from './ital-lap/ital-lap.component';
 import { BorLapComponent } from './bor-lap/bor-lap.component';
 import {HttpClientModule} from '@angular/common/http';
-import { ElerhetosegeinkComponent } from './elerhetosegeink/elerhetosegeink.component';
+import {ElerhetosegeinkComponent } from './elerhetosegeink/elerhetosegeink.component';
 import {FormsModule} from '@angular/forms';
-
+import {CardModule} from 'primeng/card';
+import {SplitButtonModule} from 'primeng/splitbutton';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CardModule,
+    SplitButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

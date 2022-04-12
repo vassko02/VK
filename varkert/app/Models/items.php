@@ -19,4 +19,7 @@ class items extends Model
     public function discount(){
         return $this->hasMany(discounts::class,'discounts','item');
     }
+    public function item(){
+        return $this->belongsTo(items::class,'size','id');
+    }
 }

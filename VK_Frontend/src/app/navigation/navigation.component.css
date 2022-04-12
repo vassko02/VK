@@ -1,5 +1,5 @@
 .navbar{
-  background-color: rgb(65, 43, 21);
+  background-color: rgb(65, 43, 21) !important;
 }
 .navbar .collapse ul li a:hover {
   color: #aaa !important;
@@ -7,3 +7,4 @@
 .active {
   color: #aaa !important;
 }
+
