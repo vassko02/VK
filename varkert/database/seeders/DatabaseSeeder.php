@@ -69,9 +69,12 @@ class DatabaseSeeder extends Seeder
             ]);
         }
         $items = [
-            ['name' => 'Cappuccino', 'price' => '450', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/cappuccino.jpg'],
-            ['name' => 'Latte', 'price' => '500', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/latte.jpg'],
-            ['name' => 'Espresso', 'price' => '410', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/espresso.jpg']
+            ['name' => 'Olasz Cappuccino', 'price' => '450', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/cappuccino.jpg'],
+            ['name' => 'Cafee Latte', 'price' => '500', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/latte.jpg'],
+            ['name' => 'Espresso', 'price' => '410', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/espresso.jpg'],
+            ['name' => 'Cafee lungo', 'price' => '470', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/hosszukave.jpg'],
+            ['name' => 'Melange', 'price' => '520', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/melange.jpg']
+
         ];
         foreach($items as $item){
             items::create($item);

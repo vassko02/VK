@@ -4,9 +4,11 @@
   margin-right: 10vw;
 
 }
-.nyil{
+
+.nyil {
   font-size: large;
 }
+
 .indikator:hover {
   cursor: default !important;
 }
@@ -22,18 +24,56 @@
 .content {
   width: 80%;
 }
+
+.kavek {
+  background-image: url(../../assets/kaveBG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90% !important;
+  margin: auto;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 30px;
+}
+
 .card {
-  background-color: #412b15;
-  width: 23rem;
+  background-color: #362514;
+  width: 24rem;
   margin: 0 auto !important;
   margin-bottom: 5% !important;
+  border: 3px solid #5f3f1f;
 }
+
+.card:hover {
+  background-color: #5f3f1f;
+  border: 2px solid #362514;
+
+}
+
+.card:hover .card-title {
+  font-weight: bold;
+}
+
+.card:hover .card-text {
+  font-weight: bold;
+}
+
 .card-img-top {
   margin-top: 4%;
+  height: 357px;
 }
-.card-text{
-  font-size: 16px;
+
+.card-text {
+  font-size: 20px;
+  margin-left: 4%;
 }
+
+.reggelik {
+  width: 90% !important;
+}
+
 @media only screen and (max-width: 768px) {
   [class*="slide"] {
     width: 100%;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemService } from '../Services/item.service';
 
 @Component({
   selector: 'app-kaveink',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kaveink.component.css']
 })
 export class KaveinkComponent implements OnInit {
+  kavek:any=[]
 
-  constructor() { }
-
+  constructor(private service:ItemService) {
+    this.service.getItemsByCategories(1).subscribe((data)=>{this.kavek=data;})
+  }
   ngOnInit(): void {
   }
 
