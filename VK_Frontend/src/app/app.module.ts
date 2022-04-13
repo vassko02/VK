@@ -13,8 +13,8 @@ import { BorLapComponent } from './bor-lap/bor-lap.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ElerhetosegeinkComponent } from './elerhetosegeink/elerhetosegeink.component';
 import {FormsModule} from '@angular/forms';
-import {CardModule} from 'primeng/card';
-import {SplitButtonModule} from 'primeng/splitbutton';
+import { KaveinkComponent } from './kaveink/kaveink.component';
+import {ImageModule} from 'primeng/image';
 
 @NgModule({
   declarations: [
@@ -27,14 +27,14 @@ import {SplitButtonModule} from 'primeng/splitbutton';
     ItalLapComponent,
     BorLapComponent,
     ElerhetosegeinkComponent,
+    KaveinkComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    CardModule,
-    SplitButtonModule
+    ImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

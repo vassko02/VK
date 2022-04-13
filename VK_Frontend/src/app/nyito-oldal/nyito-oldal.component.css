@@ -1,20 +1,38 @@
-.carousel.slide{
-  margin-top: 10vh;
+.carousel.slide {
+  margin-top: 9vh !important;
   margin-left: 10vw;
   margin-right: 10vw;
 
 }
-.indikator:hover{
+.nyil{
+  font-size: large;
+}
+.indikator:hover {
   cursor: default !important;
 }
-.kisSzoveg{
+
+.kisSzoveg {
   font-size: 2vh;
 }
-.masodik{
-  color: black ;
+
+.masodik {
+  color: black;
 }
-.content{
+
+.content {
   width: 80%;
+}
+.card {
+  background-color: #412b15;
+  width: 23rem;
+  margin: 0 auto !important;
+  margin-bottom: 5% !important;
+}
+.card-img-top {
+  margin-top: 4%;
+}
+.card-text{
+  font-size: 16px;
 }
 @media only screen and (max-width: 768px) {
   [class*="slide"] {
@@ -22,9 +40,20 @@
     margin-left: 0vw !important;
     margin-right: 0vw !important;
 
-  }}
+  }
+}
+
 @media only screen and (max-width: 990px) {
   [class*="slide"] {
+    width: 90%;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  [class*="card"] {
     width: 90%;
     margin-left: 5vw !important;
     margin-right: 5vw !important;

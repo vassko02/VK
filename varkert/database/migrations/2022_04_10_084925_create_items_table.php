@@ -19,6 +19,7 @@ return new class extends Migration
             $table->double('price')->require();
             $table->integer('category')->require()->unsigned();
             $table->integer('size')->require()->unsigned();
+            $table->string('imgUrl');
             $table->foreign('category')
             ->references('id')
             ->on('categories')

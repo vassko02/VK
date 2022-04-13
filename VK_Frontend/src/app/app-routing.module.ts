@@ -7,15 +7,17 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { ItalLapComponent } from './ital-lap/ital-lap.component';
 import { NyitoOldalComponent } from './nyito-oldal/nyito-oldal.component';
 import { RolunkComponent } from './rolunk/rolunk.component';
+import { KaveinkComponent } from './kaveink/kaveink.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/nyitooldal',pathMatch:'full'},
+{path:'',redirectTo:'/nyitooldal',pathMatch:'full'},
 {path:'rolunk',component:RolunkComponent},
 {path:'csapatunk',component:CsapatunkComponent},
 {path:'galeria',component:GaleriaComponent},
 {path:'itallap',component:ItalLapComponent},
 {path:'borlap',component:BorLapComponent},
 {path:'elerhetosegeink',component:ElerhetosegeinkComponent},
+{path:'kaveink',component:KaveinkComponent},
 {path:'**',component:NyitoOldalComponent}];
 
 @NgModule({
