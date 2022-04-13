@@ -1,8 +1,7 @@
-.carousel.slide {
+.mainCarouser {
   margin-top: 9vh !important;
   margin-left: 10vw;
   margin-right: 10vw;
-
 }
 
 .nyil {
@@ -74,6 +73,20 @@
   width: 90% !important;
 }
 
+.reggeliCarouser {
+  height: 20h !important;
+  width: 35vw !important;
+  margin-bottom: 5% !important;
+}
+
+.reggeliSzoveg {
+  text-align: justify !important;
+}
+
+.reggeliGomb {
+  margin-left: 70%;
+}
+
 @media only screen and (max-width: 768px) {
   [class*="slide"] {
     width: 100%;
@@ -90,9 +103,7 @@
     margin-right: 5vw !important;
 
   }
-}
 
-@media only screen and (max-width: 990px) {
   [class*="card"] {
     width: 90%;
     margin-left: 5vw !important;

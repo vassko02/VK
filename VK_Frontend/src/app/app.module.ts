@@ -14,6 +14,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {ElerhetosegeinkComponent } from './elerhetosegeink/elerhetosegeink.component';
 import {FormsModule} from '@angular/forms';
 import { KaveinkComponent } from './kaveink/kaveink.component';
+import { ReggeliComponent } from './reggeli/reggeli.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { KaveinkComponent } from './kaveink/kaveink.component';
     BorLapComponent,
     ElerhetosegeinkComponent,
     KaveinkComponent,
+    ReggeliComponent,
   ],
   imports: [
     BrowserModule,

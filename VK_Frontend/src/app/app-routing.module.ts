@@ -8,6 +8,7 @@ import { ItalLapComponent } from './ital-lap/ital-lap.component';
 import { NyitoOldalComponent } from './nyito-oldal/nyito-oldal.component';
 import { RolunkComponent } from './rolunk/rolunk.component';
 import { KaveinkComponent } from './kaveink/kaveink.component';
+import { ReggeliComponent } from './reggeli/reggeli.component';
 
 const routes: Routes = [
 {path:'',redirectTo:'/nyitooldal',pathMatch:'full'},
@@ -18,6 +19,8 @@ const routes: Routes = [
 {path:'borlap',component:BorLapComponent},
 {path:'elerhetosegeink',component:ElerhetosegeinkComponent},
 {path:'kaveink',component:KaveinkComponent},
+{path:'reggeli',component:ReggeliComponent},
+
 {path:'**',component:NyitoOldalComponent}];
 
 @NgModule({
