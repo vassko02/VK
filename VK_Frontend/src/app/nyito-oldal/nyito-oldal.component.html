@@ -43,14 +43,14 @@
   <div class="container-fluid content mt-3">
     <h1 class="text-center mb-4 text-white">Kávé kínálatunk</h1>
     <div class="row">
-      <div class="card me-5 mb-4 col-lg-4 col-md-4 col-sm-6 col-xs-12" *ngFor="let kave of kavek.slice(0,5)">
+      <div class="card me-5 mb-4 col-lg-4 col-md-4 col-sm-6 col-xs-12 kaveCard" *ngFor="let kave of kavek.slice(0,5)">
         <img src="{{ kave.imgUrl }}" class="card-img-top" alt="Cappuccino">
         <div class="card-body">
           <h5 class="card-title text-white">{{ kave.name }}</h5>
           <p class="card-text text-white">{{ kave.price }} Ft</p>
         </div>
       </div>
-      <div class="card me-5 mb-4 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="card me-5 mb-4 col-lg-3 col-md-4 col-sm-6 col-xs-12 kaveCard">
         <img src="/assets/tovabbiKavek.jpeg" class="card-img-top" alt="Cappuccino">
         <div class="card-body">
           <div class="row">
@@ -64,12 +64,12 @@
   </div>
 </div>
 <div class="reggelik container-fluid ">
-  <h1 class="text-left ms-2 mt-3">Reggelizz nálunk</h1>
   <div class="row">
     <div class="col">
+      <h1 class="text-left ms-5 mt-3">Reggelizz nálunk</h1>
       <div id="carouselExampleSlidesOnly" class="carousel slide reggeliCarouser ms-5 mt-2" data-interval="2000"
         data-bs-ride="carousel">
-        <div class="carousel-inner border border-dark">
+        <div class="carousel-inner border border-2 border-dark">
           <div class="carousel-item active">
             <img src="../../assets/torony.jpg" class="d-block w-100" alt="Szendvicstorony">
             <div class="carousel-caption d-none d-md-block">
@@ -92,21 +92,41 @@
       </div>
     </div>
     <div class="col">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item reggeliSzoveg list-group-item-light">Kávézónkban fél nyolctól egészen délig különböző reggeliget
+      <ul class="list-group list-group-flush shadow-lg p-3 mb-3 rounded felsorolas mt-5">
+        <li class="list-group-item reggeliSzoveg list-group-item-light text-dark">Kávézónkban fél nyolctól egészen délig
+          különböző reggeliket
           próbálhatsz ki. Menünkön megtalálható sokak által kedvelt szendvicstorony, vagy esetleg bőségtál, de ha egy
           klasszikus rántottát kívánsz meg akkor sem hagyunk cserben.</li>
-        <li class="list-group-item reggeliSzoveg list-group-item-dark">Reggelid mellé több tucat hideg vagy meleg italunkból választhatsz,
-          melyeket elfogyaszthatsz kávézónkban vagy magaddal viheted ha éppen egy rohanásban vagy. Teljes
-          kávékínálatunkért kattints <a routerLink="/kaveink">ide</a>.</li>
-        <li class="list-group-item reggeliSzoveg list-group-item-light">Ha esetleg a gyümölcslevek híve vagy akkor kávézónkban frissen facsart narancslevet
+        <li class="list-group-item reggeliSzoveg list-group-item-dark">Reggelid mellé több tucat hideg vagy meleg
+          italunkból választhatsz,
+          melyeket elfogyaszthatsz kávézónkban vagy magaddal viheted ha éppen rohanásban vagy. Teljes
+          kávékínálatunkért kattints <a routerLink="/kaveink" class="text-primary">ide</a>.</li>
+        <li class="list-group-item reggeliSzoveg list-group-item-light text-dark">Ha esetleg a gyümölcslevek híve vagy
+          akkor kávézónkban frissen facsart narancslevet
           is találsz, de ha mégsem ezzel kísérnéd reggelid akkor Cappy gyümölcsleveink között biztosan találsz valami
           kedvedre valót.</li>
-        <li class="list-group-item reggeliSzoveg list-group-item-dark">Ha a fentebbi italok nem győztek meg akkor Shake turmix-okat is megtalálsz az itallapodon. Ezeket kérheted víz vagy tej alapon, jéggel vagy anélkül, több ízben is kinek mivel szimpatikusabb.</li>
-        <li class="list-group-item list-group-item-light"> <a class="btn btn-secondary reggeliGomb" routerLink="/reggeli"><span class="me-3">Teljes
+        <li class="list-group-item reggeliSzoveg list-group-item-dark">Ha a fentebbi italok nem győztek meg akkor Protein Shake
+          turmix-okat is megtalálsz az itallapodon. Ezeket kérheted víz vagy tej alapon, zabbal vagy zab nélkül, jéggel vagy anélkül, több ízben
+          is kinek mivel szimpatikusabb.</li>
+        <li class="list-group-item list-group-item-light"> <a class="btn btn-secondary reggeliGomb"
+            routerLink="/reggeli"><span class="me-3">Teljes
               reggeli menü</span> <i class="bi nyil bi-arrow-right"></i></a>
         </li>
       </ul>
+      <div class="row">
+        <div class="card italcard me-4 ms-3 rounded" style="width: 25rem;">
+          <img src="../../assets/cappy.jpg" class="card-img-top mt-2" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cappy üdítőink</h5>
+          </div>
+        </div>
+        <div class="card italcard rounded" style="width: 25rem;">
+          <img src="../../assets/shake.jpg" class="mt-2 card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Protein shake</h5>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

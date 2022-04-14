@@ -37,7 +37,7 @@
   font-size: 30px;
 }
 
-.card {
+.kaveCard {
   background-color: #362514;
   width: 24rem;
   margin: 0 auto !important;
@@ -45,21 +45,22 @@
   border: 3px solid #5f3f1f;
 }
 
-.card:hover {
+.kaveCard:hover {
   background-color: #5f3f1f;
   border: 2px solid #362514;
 
 }
 
-.card:hover .card-title {
+.kaveCard:hover .card-title {
   font-weight: bold;
 }
 
-.card:hover .card-text {
+.kaveCard:hover .card-text {
   font-weight: bold;
 }
 
-.card-img-top {
+
+.kaveCard .card-img-top {
   margin-top: 4%;
   height: 357px;
 }
@@ -86,7 +87,18 @@
 .reggeliGomb {
   margin-left: 70%;
 }
-
+.felsorolas{
+  background-color: #a17141;
+}
+.italcard .card-img-top{
+  height: 200px;
+}
+.italcard{
+  background-color:#a17141;
+}
+.italcard:hover, .felsorolas:hover{
+  background-color: peru !important;
+}
 @media only screen and (max-width: 768px) {
   [class*="slide"] {
     width: 100%;
