@@ -36,6 +36,7 @@ class DatabaseSeeder extends Seeder
             (object)['name' => 'bor'],
             (object)['name' => 'pálinka'],
             (object)['name' => 'sör'],
+            (object)['name' => 'long drink'],
         ];
         $positions = [
             (object)['name' => 'főnök'],
@@ -44,7 +45,6 @@ class DatabaseSeeder extends Seeder
             (object)['name' => 'beszállító'],
             (object)['name' => 'konyhás'],
             (object)['name' => 'kisegítő'],
-
         ];
         $sizes = [
             (object)['name' => 'Nincs méretezve'],
@@ -74,7 +74,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Espresso', 'price' => '410', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/espresso.jpg'],
             ['name' => 'Cafee lungo', 'price' => '470', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/hosszukave.jpg'],
             ['name' => 'Melange', 'price' => '520', 'category' => '1', 'size' => '1','imgUrl'=>'/assets/melange.jpg']
-
+            
         ];
         foreach($items as $item){
             items::create($item);

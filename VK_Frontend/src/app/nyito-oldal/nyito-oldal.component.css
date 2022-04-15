@@ -42,12 +42,12 @@
   width: 24rem;
   margin: 0 auto !important;
   margin-bottom: 5% !important;
-  border: 3px solid #5f3f1f;
+  border: 2px solid #5f3f1f;
 }
 
 .kaveCard:hover {
   background-color: #5f3f1f;
-  border: 2px solid #362514;
+  border: 2px solid white;
 
 }
 
@@ -65,9 +65,10 @@
   height: 357px;
 }
 
-.card-text {
+.kaveCard .card-text {
   font-size: 20px;
   margin-left: 4%;
+
 }
 
 .reggelik {
@@ -87,17 +88,54 @@
 .reggeliGomb {
   margin-left: 70%;
 }
-.felsorolas{
+
+.felsorolas {
   background-color: #a17141;
+  border: 2px solid #a17141 !important;
+
 }
-.italcard .card-img-top{
+
+.italcard .card-img-top {
   height: 200px;
 }
-.italcard{
-  background-color:#a17141;
+
+.italcard {
+  background-color: #a17141;
+  border: 2px solid #a17141 !important;
+
 }
-.italcard:hover, .felsorolas:hover{
+
+.italcard:hover,
+.felsorolas:hover {
   background-color: peru !important;
+  border: 2px solid white !important;
+}
+.este {
+  background-color: #2b1c0d;
+
+}
+.estiCard{
+  min-height: 520px;
+  height: fit-content !important;
+  margin-bottom: 5%   ;
+}
+.estiCard .card-img-top {
+  height: 300px;
+}
+.estiCard:hover{
+  background-color: rgb(59, 57, 57) !important;
+  border: 2px solid white !important;
+}
+.estiCard .card-text{
+  font-size: 18px !important;
+  text-align: justify !important;
+}
+.sor{
+  width: 90% !important;
+  margin: auto !important;
+}
+.esteCim{
+  padding-top: 1% !important;
 }
 @media only screen and (max-width: 768px) {
   [class*="slide"] {
@@ -106,6 +144,16 @@
     margin-right: 0vw !important;
 
   }
+
+  [class*="italcard"] {
+    margin: auto !important;
+    width: 70vw !important;
+    margin-bottom: 5% !important;
+  }
+
+  [class*="row"] {
+    margin: auto !important;
+  }
 }
 
 @media only screen and (max-width: 990px) {
@@ -113,13 +161,36 @@
     width: 90%;
     margin-left: 5vw !important;
     margin-right: 5vw !important;
-
   }
 
-  [class*="card"] {
+  [class*="reggeliCarouser"] {
+    margin: auto !important;
+    width: 50vw !important;
+  }
+
+  [class*="italcard"] {
+    margin: auto !important;
+    width: 50vw !important;
+    margin-bottom: 5% !important;
+  }
+
+  [class*="kaveCard"] {
     width: 90%;
     margin-left: 5vw !important;
     margin-right: 5vw !important;
-
   }
 }
+@media only screen and (max-width: 1885px) {
+  [class*="italcard"] {
+    margin-left: 0vw !important;
+    margin-right: 0vw !important;
+  }}
+  @media only screen and (max-width: 1800px) {
+    [class*="italcard"] {
+width: 350px !important;
+    }}
+    @media only screen and (max-width: 1800px) {
+      [class*="italcard"] {
+        margin: auto !important;
+        margin-bottom: 4%  !important;
+      }}

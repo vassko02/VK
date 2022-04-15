@@ -15,6 +15,7 @@ import {ElerhetosegeinkComponent } from './elerhetosegeink/elerhetosegeink.compo
 import {FormsModule} from '@angular/forms';
 import { KaveinkComponent } from './kaveink/kaveink.component';
 import { ReggeliComponent } from './reggeli/reggeli.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ReggeliComponent } from './reggeli/reggeli.component';
     ElerhetosegeinkComponent,
     KaveinkComponent,
     ReggeliComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
