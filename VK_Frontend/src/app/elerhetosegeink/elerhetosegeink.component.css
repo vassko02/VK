@@ -1,0 +1,39 @@
+.google-map{
+  height: 50vh;
+  width: 30vw;
+}
+.table{
+  width: 70%;
+}
+.map{
+  margin-left: 5vw !important;
+}
+.card-img-top{
+  height: 16vh !important;
+  width: 16vh !important;
+  margin: auto !important;
+}
+.card{
+  width: 20vh !important;
+}
+
+.container-fluid{
+  margin-top: 10% !important;
+  margin-bottom: 12% !important;
+
+}
+@media only screen and (max-width: 991px) {
+  [class*="map"] {
+    width: 60vw !important;
+    margin: auto !important;
+  }  [class*="container-fluid"] {
+    margin-bottom: 2% !important;
+    margin-top: 2% !important;
+
+  }
+}
+@media only screen and (max-width: 5509x) {
+  [class*="map"] {
+    width: 90vw !important;
+  }
+}

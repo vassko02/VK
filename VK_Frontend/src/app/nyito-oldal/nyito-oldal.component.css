@@ -110,33 +110,41 @@
   background-color: peru !important;
   border: 2px solid white !important;
 }
+
 .este {
   background-color: #2b1c0d;
   width: 95%;
 }
-.estiCard{
+
+.estiCard {
   min-height: 520px;
   height: fit-content !important;
-  margin-bottom: 5%   ;
+  margin-bottom: 5%;
 }
+
 .estiCard .card-img-top {
   height: 300px;
 }
-.estiCard:hover{
+
+.estiCard:hover {
   background-color: rgb(59, 57, 57) !important;
   border: 2px solid white !important;
 }
-.estiCard .card-text{
+
+.estiCard .card-text {
   font-size: 18px !important;
   text-align: justify !important;
 }
-.sor{
+
+.sor {
   width: 90% !important;
   margin: auto !important;
 }
-.esteCim{
+
+.esteCim {
   padding-top: 1% !important;
 }
+
 @media only screen and (max-width: 768px) {
   [class*="slide"] {
     width: 100%;
@@ -180,17 +188,23 @@
     margin-right: 5vw !important;
   }
 }
+
 @media only screen and (max-width: 1885px) {
   [class*="italcard"] {
     margin-left: 0vw !important;
     margin-right: 0vw !important;
-  }}
-  @media only screen and (max-width: 1800px) {
-    [class*="italcard"] {
-width: 350px !important;
-    }}
-    @media only screen and (max-width: 1800px) {
-      [class*="italcard"] {
-        margin: auto !important;
-        margin-bottom: 4%  !important;
-      }}
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  [class*="italcard"] {
+    width: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  [class*="italcard"] {
+    margin: auto !important;
+    margin-bottom: 4% !important;
+  }
+}
