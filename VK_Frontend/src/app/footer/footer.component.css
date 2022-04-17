@@ -1,0 +1,5 @@
+.container-fluid{
+  background-color:rgb(65, 43, 21);
+  height: fit-content;
+  min-height: 26vh;
+}

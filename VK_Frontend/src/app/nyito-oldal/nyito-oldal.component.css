@@ -42,7 +42,7 @@
   width: 24rem;
   margin: 0 auto !important;
   margin-bottom: 5% !important;
-  border: 2px solid #5f3f1f;
+  border: 2px solid #362514;
 }
 
 .kaveCard:hover {
@@ -112,7 +112,7 @@
 }
 .este {
   background-color: #2b1c0d;
-
+  width: 95%;
 }
 .estiCard{
   min-height: 520px;
