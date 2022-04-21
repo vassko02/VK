@@ -1,0 +1,22 @@
+      <div class="tovabbi text-center">
+        <div class="card mb-3 mt-5 mx-auto">
+
+          <a class="card-img-top"
+            href="https://www.tripadvisor.com/Restaurant_Review-g1028115-d4334804-Reviews-Varkert_Cafe-Mosonmagyarovar_Gyor_Moson_Sopron_County_Central_Transdanubia.html">
+            <img src="../../assets/trip.png" class="card-img-top" alt="Tripadvisor">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Értékeld a Várkertet a <a
+                href="https://www.tripadvisor.com/Restaurant_Review-g1028115-d4334804-Reviews-Varkert_Cafe-Mosonmagyarovar_Gyor_Moson_Sopron_County_Central_Transdanubia.html">Tripadvisor</a>
+              oldalán!</p>
+          </div>
+        </div>
+        <div class="card mx-auto">
+          <a class="card-img-top" href="https://kutyabarat.hu/kavezok/376/varkert_kavezo">
+            <img src="../../assets/kutyabarat_.png" class="card-img-top" alt="KutyaBarát kávézó">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Hozd magaddal kiskedvenced!</p>
+          </div>
+        </div>
+      </div>

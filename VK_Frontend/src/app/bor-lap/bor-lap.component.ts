@@ -10,7 +10,7 @@ export class BorLapComponent implements OnInit {
   borok:any=[]
 
   constructor(private service: ItemService) {
-    this.service.getItemsByCategories(1).subscribe((data) => { this.borok = data; })
+    this.service.getItemsByCategories(8).subscribe((data) => { this.borok = data; })
   }
 
   ngOnInit(): void {
