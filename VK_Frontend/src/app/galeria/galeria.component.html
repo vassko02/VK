@@ -5,7 +5,7 @@
       <div class="product-item">
           <div class="product-item-content">
               <div class="mb-3">
-                  <img src="../../assets/kulso/{{ product }}" [alt]="product" class="product-image rounded"/>
+                  <img src="../../assets/kulso/{{ product.url }}" [alt]="product.name" class="product-image rounded"/>
               </div>
           </div>
       </div>
@@ -19,22 +19,21 @@
       <div class="product-item">
           <div class="product-item-content">
               <div class="mb-3">
-                  <img src="../../assets/belso/{{ product }}" [alt]="product" class="product-image rounded"/>
+                  <img src="../../assets/belso/{{ product.url }}" [alt]="product.name" class="product-image rounded"/>
               </div>
           </div>
       </div>
   </ng-template>
 </p-carousel>
-
-
   <h2 class="ms-5">Ételek, Italok</h2>
 <p-carousel [value]="etelital" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
   <ng-template let-product pTemplate="item">
       <div class="product-item">
           <div class="product-item-content">
               <div class="mb-3">
-                  <img src="../../assets/etelekItalok/{{product}}" [alt]="product" class="product-image rounded"/>
+                  <img src="../../assets/etelekItalok/{{product.url}}" [alt]="product.name" class="product-image rounded"/>
               </div>
+              <p class="name">{{ product.name }}</p>
           </div>
       </div>
   </ng-template>

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ImageModel } from '../Models/image.model';
-import { Kepek } from './kepek.storage';
+import { BelsoKepek } from './kepek.storage';
+import { KulsoKepek } from './kepek.storage';
+import { EtelKepek } from './kepek.storage';
+
 @Component({
   selector: 'app-galeria',
   templateUrl: './galeria.component.html',
@@ -35,18 +38,9 @@ export class GaleriaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.model=Kepek;
-    Kepek.forEach(kep => {
-      if(kep.type=="belső"){
-        this.belso.push(kep.url);
-      }
-      if(kep.type=="külső"){
-        this.kulso.push(kep.url);
-      }
-      if(kep.type=="étel"){
-        this.etelital.push(kep.url);
-      }
-    });
+    this.belso=BelsoKepek;
+    this.kulso=KulsoKepek;
+    this.etelital=EtelKepek;
   }
 
 }
