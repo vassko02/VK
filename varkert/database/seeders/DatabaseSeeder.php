@@ -47,12 +47,13 @@ class DatabaseSeeder extends Seeder
             (object)['name' => 'shot'],
             (object)['name' => 'koktél'],
             (object)['name' => 'reggeli'],
-            (object)['name' => 'szendvics'],
+            (object)['name' => 'konyha'],
             (object)['name' => 'ebéd'],
             (object)['name' => 'bor'],
             (object)['name' => 'pálinka'],
             (object)['name' => 'sör'],
             (object)['name' => 'long drink'],
+            (object)['name' => 'ital'],
         ];
         $positions = [
             (object)['name' => 'főnök'],
