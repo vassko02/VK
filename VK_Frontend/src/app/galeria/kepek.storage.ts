@@ -9,10 +9,6 @@ export const Kepek: Array<ImageModel> = [
     type: "belső"
   },
   {
-    url: '3.jpg',
-    type: "belső"
-  },
-  {
     url: '4.jpg',
     type: "belső"
   },

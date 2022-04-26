@@ -1,28 +1,39 @@
 <div class="container-fluid">
-  <h2 class="elso">Várkert kávézó külső</h2>
-  <div class="row">
-    <img *ngFor="let kep of kulso" src="{{ kep }}" class="kulsoImg ms-2 me-1 border border-1 img-fluid col-lg-3"
-      alt="Várkert külső kép">
-  </div>
-  <h2>Várkert kávéző belső</h2>
-  <div class="row">
-    <img *ngFor="let kep of belso" src="{{ kep }}" class="belsoImg ms-2 me-1 border border-1 img-fluid col-lg-3"
-      alt="Várkert belső kép">
-  </div>
-  <h2>Ételek, Italok</h2>
-  <div class="row">
-    <img *ngFor="let kep of etelital" src="{{ kep }}" class="elelekImg ms-2 me-1 border border-1 img-fluid col-lg-3"
-      alt="Étel, ital kép">
-  </div>
-</div>
-<p-carousel [value]="etelital" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">  <ng-template pTemplate="header">
-      <h5>Vertical</h5>
-  </ng-template>
+  <h2 class="elso ms-5">Várkert kávézó külső</h2>
+  <p-carousel [value]="kulso" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
   <ng-template let-product pTemplate="item">
       <div class="product-item">
           <div class="product-item-content">
               <div class="mb-3">
-                  <img src="../../assets/etelekItalok/{{product}}" [alt]="product" class="product-image"/>
+                  <img src="../../assets/kulso/{{ product }}" [alt]="product" class="product-image rounded"/>
+              </div>
+          </div>
+      </div>
+  </ng-template>
+</p-carousel>
+
+
+  <h2 class="ms-5">Várkert kávéző belső</h2>
+<p-carousel [value]="belso" styleClass="custom-carousel" [numVisible]="3" [responsiveOptions]="responsiveOptions">
+  <ng-template let-product pTemplate="item">
+      <div class="product-item">
+          <div class="product-item-content">
+              <div class="mb-3">
+                  <img src="../../assets/belso/{{ product }}" [alt]="product" class="product-image rounded"/>
+              </div>
+          </div>
+      </div>
+  </ng-template>
+</p-carousel>
+
+
+  <h2 class="ms-5">Ételek, Italok</h2>
+<p-carousel [value]="etelital" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+  <ng-template let-product pTemplate="item">
+      <div class="product-item">
+          <div class="product-item-content">
+              <div class="mb-3">
+                  <img src="../../assets/etelekItalok/{{product}}" [alt]="product" class="product-image rounded"/>
               </div>
           </div>
       </div>
