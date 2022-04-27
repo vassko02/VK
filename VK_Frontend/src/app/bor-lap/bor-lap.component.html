@@ -1,1 +1,32 @@
-<p>bor-lap works!</p>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<div class="modal fade mt-5 ms-5 me-5" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Várkert kávézó borlap</h5>
+        <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="borlapCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div *ngFor="let bor of borok" [ngClass]="{'active':bor.url==='01.jpg'}" class="carousel-item ms-5">
+              <img src="../../assets/borlap/{{ bor.url }}" class="d-block w-100" alt="{{ bor.name }}">
+            </div>
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#borlapCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#borlapCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

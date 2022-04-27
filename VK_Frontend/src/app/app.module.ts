@@ -21,6 +21,7 @@ import {ScrollTopModule} from 'primeng/scrolltop';
 import {CarouselModule} from 'primeng/carousel';
 import {TableModule} from 'primeng/table';
 import {ButtonModule} from 'primeng/button';
+import {GMapModule} from 'primeng/gmap';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import {ButtonModule} from 'primeng/button';
     FormsModule,
     BrowserAnimationsModule,
     CardModule,
-    ScrollTopModule,CarouselModule,TableModule,ButtonModule
+    ScrollTopModule,CarouselModule,TableModule,ButtonModule,GMapModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,7 +4,7 @@ import { ItemService } from '../Services/item.service';
 @Component({
   selector: 'app-kaveink',
   templateUrl: './kaveink.component.html',
-  styleUrls: ['./kaveink.component.css']
+  styleUrls: ['./kaveink.component.scss']
 })
 export class KaveinkComponent implements OnInit {
   kavek:any=[]

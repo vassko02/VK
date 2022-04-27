@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ImageModel } from '../Models/image.model';
 import { BelsoKepek } from './kepek.storage';
 import { KulsoKepek } from './kepek.storage';
 import { EtelKepek } from './kepek.storage';
@@ -7,7 +6,7 @@ import { EtelKepek } from './kepek.storage';
 @Component({
   selector: 'app-galeria',
   templateUrl: './galeria.component.html',
-  styleUrls: ['./galeria.component.css']
+  styleUrls: ['./galeria.component.scss']
 })
 export class GaleriaComponent implements OnInit {
 

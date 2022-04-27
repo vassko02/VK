@@ -1,0 +1,19 @@
+.modal{
+  max-height: 90vh;
+  max-width: 95vw;
+}
+img{
+  max-height: 79vh;
+  max-width: 90vw;
+
+}
+.carousel{
+  width: 90vw;
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+.modal-header,.modal-body,.modal-dialog{
+  width: 95vw;
+}

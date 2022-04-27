@@ -3,7 +3,7 @@ import { ItemService } from '../Services/item.service';
 @Component({
   selector: 'app-nyito-oldal',
   templateUrl: './nyito-oldal.component.html',
-  styleUrls: ['./nyito-oldal.component.css']
+  styleUrls: ['./nyito-oldal.component.scss']
 })
 export class NyitoOldalComponent implements OnInit {
   kavek:any=[]
