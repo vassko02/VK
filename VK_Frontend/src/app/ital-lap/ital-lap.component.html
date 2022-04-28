@@ -1,1 +1,29 @@
-itallap works
+
+
+<div class="modal fade mt-5 ms-5 me-5" id="italLap" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen .modal-fullscreen-sm-down modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Itallapunk</h5>
+        <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body  bg-dark">
+        <div id="italLapCarousel" class="carousel slide"  data-bs-ride="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div *ngFor="let bor of italok" [ngClass]="{'active':bor.url==='01.jpg','elso':bor.url==='01.jpg'}" class="carousel-item ms-5">
+              <img src="../../assets/itallap/{{bor.url}}" class="d-block w-100" alt="{{ bor.name }}">
+            </div>
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#italLapCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#italLapCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

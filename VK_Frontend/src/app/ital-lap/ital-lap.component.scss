@@ -1,0 +1,39 @@
+.modal {
+  max-height: 80vh;
+  max-width: 95vw;
+}
+
+img {
+  max-height: 68vh;
+  max-width: 88vw;
+}
+
+.carousel {
+  width: 90vw;
+  margin-top: 0.3%;
+}
+
+.modal-header,
+.modal-body,
+.modal-dialog {
+  width: 95vw;
+}
+
+.modal-header {
+  background-color: rgb(158, 158, 158);
+}
+
+.elso {
+  width: 80vw !important;
+  margin-left: 6% !important;
+}
+@media only screen and (max-width: 1300px) {
+  [class*="modal"] {
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  img {
+    width: 90%;
+  }
+}

@@ -4,11 +4,12 @@
 }
 img{
   max-height: 79vh;
-  max-width: 90vw;
-
+  max-width: 88vw;
 }
 .carousel{
   width: 90vw;
+  margin:auto ;
+  margin-top: 0.3%;
 }
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
@@ -16,4 +17,27 @@ img{
 }
 .modal-header,.modal-body,.modal-dialog{
   width: 95vw;
+}
+.modal-header {
+  background-color: rgb(158, 158, 158);
+}
+@media only screen and (max-width: 1300px) {
+  [class*="modal"] {
+    margin: 0 !important;
+  }
+  [class*="carousel"] {
+    margin: 0 !important;
+    width: 90vw;
+  }
+  [class*="carousel-control-next"] {
+    margin-left: 60vw !important;
+  }
+  [class*="carousel-control-prev"] {
+    margin-right: 60vw !important;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  img {
+    width: 90%;
+  }
 }

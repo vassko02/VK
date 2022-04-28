@@ -21,12 +21,12 @@
           (click)="active='csapatunk'" routerLink="csapatunk">Csapatunk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light ms-2" [ngClass]="{'active': active === 'itallap'}"
-          (click)="active='itallap'" routerLink="itallap">Itallap</a>
+          <a class="nav-link text-light ms-2 borlapLink"
+           data-bs-toggle="modal" data-bs-target="#italLap">Itallap</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light ms-2" [ngClass]="{'active': active === 'borlap'}"
-          (click)="active='borlap'" routerLink="borlap">Borlap</a>
+          <a class="nav-link text-light ms-2 borlapLink"
+          data-bs-toggle="modal" data-bs-target="#borLap">Borlap</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light ms-2" [ngClass]="{'active': active === 'galeria'}"

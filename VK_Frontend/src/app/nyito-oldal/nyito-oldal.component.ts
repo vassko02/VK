@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemService } from '../Services/item.service';
+
 @Component({
   selector: 'app-nyito-oldal',
   templateUrl: './nyito-oldal.component.html',
@@ -7,12 +8,14 @@ import { ItemService } from '../Services/item.service';
 })
 export class NyitoOldalComponent implements OnInit {
   kavek:any=[]
+  borok:any=[]
 
   constructor(private service:ItemService) {
     this.service.getItemsByCategories(1).subscribe((data)=>{this.kavek=data;})
   }
 
   ngOnInit(): void {
+
   }
 
 }
