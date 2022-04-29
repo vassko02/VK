@@ -1,22 +1,41 @@
-      <div class="tovabbi text-center">
-        <div class="card mb-3 mt-5 mx-auto">
-
-          <a class="card-img-top"
-            href="https://www.tripadvisor.com/Restaurant_Review-g1028115-d4334804-Reviews-Varkert_Cafe-Mosonmagyarovar_Gyor_Moson_Sopron_County_Central_Transdanubia.html">
-            <img src="../../assets/trip.png" class="card-img-top" alt="Tripadvisor">
-          </a>
-          <div class="card-body">
-            <p class="card-text">Értékeld a Várkertet a <a
-                href="https://www.tripadvisor.com/Restaurant_Review-g1028115-d4334804-Reviews-Varkert_Cafe-Mosonmagyarovar_Gyor_Moson_Sopron_County_Central_Transdanubia.html">Tripadvisor</a>
-              oldalán!</p>
-          </div>
-        </div>
-        <div class="card mx-auto">
-          <a class="card-img-top" href="https://kutyabarat.hu/kavezok/376/varkert_kavezo">
-            <img src="../../assets/kutyabarat_.png" class="card-img-top" alt="KutyaBarát kávézó">
-          </a>
-          <div class="card-body">
-            <p class="card-text">Hozd magaddal kiskedvenced!</p>
-          </div>
-        </div>
+<div id="carouselExampleControls" class="carousel slide mainCarouser" data-interval="3000" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active indikator"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="indikator"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="indikator"
+      aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/interrior.jpeg" class="d-block w-100" alt="Kávézónk">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="mb-4 masodik">Látogass el kávézónkba!</h3>
+        <p class="kisSzoveg masodik">Mosonmagyaróvár egyik legigényesebb kávéháza.</p>
       </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/cakes.jpg" class="d-block w-100" alt="Süteményeink">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="mb-4 masodik">Sütizz kedved szerint!</h3>
+        <p class="kisSzoveg masodik">Nálunk megtalálsz minden kedvedre való süteményt!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/cofee.jpeg" class="d-block w-100" alt="Kávéjaink">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="mb-4">Kávézz nálunk!</h3>
+        <p class="kisSzoveg">Kísérletezz klasszikus vagy rendhagyó kávéinkkal!</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
